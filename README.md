@@ -7,7 +7,7 @@
   <div id="app">
     <RegionPicker
       v-model="cityCode"
-      :level="3"
+      :level="3" // 精确到省:1, 市:2, 区:3
       placeholder="请选择地点"
     />
   </div>
