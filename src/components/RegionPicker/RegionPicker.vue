@@ -21,8 +21,12 @@
 </template>
 
 <script>
+import TreeModel from 'tree-model';
 import Panel from './Panel.vue';
 import cityData from './data';
+
+const tree = new TreeModel();
+const root = tree.parse({ children: cityData });
 
 export default {
   name: 'CityPicker',
@@ -88,6 +92,12 @@ export default {
         ? $event.map((item) => item.value)
         : [this.fieldOption[0].value];
       this.$emit('input', val);
+    },
+    codeToPath(code) {
+      const findedNode = root.first((node) => node.model.value === Number(code));
+      const path = findedNode.getPath();
+      path.shift();
+      return path;
     },
   },
 };

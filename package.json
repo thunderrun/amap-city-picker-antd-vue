@@ -10,6 +10,7 @@
   "dependencies": {
     "ant-design-vue": "^1.6.2",
     "core-js": "^3.6.5",
+    "tree-model": "^1.0.7",
     "vue": "^2.6.11"
   },
   "devDependencies": {
