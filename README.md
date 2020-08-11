@@ -1,6 +1,14 @@
 # Antd Design Vue 高德地图城市(编码)选择组件
 
-## Example
+## Prerequisites
+
+- Antd Design Vue
+
+## Usage
+
+```cmd
+npm install amap-region-picker-antd-vue
+```
 
 ```javascript
 <template>
@@ -14,7 +22,7 @@
 </template>
 
 <script>
-import RegionPicker from 'amap-city-picker-antd-vue';
+import RegionPicker from 'amap-region-picker-antd-vue';
 
 export default {
   name: 'App',

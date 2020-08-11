@@ -1,10 +1,10 @@
 {
-  "name": "amap-city-picker-antd-vue",
+  "name": "amap-region-picker-antd-vue",
+  "main": "dist/amap-region-picker-antd.umd.js",
   "version": "0.1.0",
-  "private": true,
   "scripts": {
     "serve": "vue-cli-service serve",
-    "build": "vue-cli-service build --target lib --name amap-city-picker-antd-vue src/components/RegionPicker/RegionPicker.vue",
+    "build": "vue-cli-service build --target lib --name amap-region-picker-antd src/components/RegionPicker/RegionPicker.vue",
     "lint": "vue-cli-service lint"
   },
   "dependencies": {
